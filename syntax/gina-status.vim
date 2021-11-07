@@ -5,4 +5,7 @@ endif
 let s:ANSI = vital#gina#import('Vim.Buffer.ANSI')
 call s:ANSI.define_syntax()
 
+" Use Vim's builtin syntax for gitcommit
+runtime! syntax/gitcommit.vim
+
 let b:current_syntax = 'gina-status'
